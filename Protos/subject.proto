@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option csharp_namespace = "CarrerasService.Protos";
+
+package subjects;
+
+service SubjectsService {
+  rpc GetAllSubjects (Empty) returns (SubjectsList);
+  rpc GetAllPrerequisites (Empty) returns (PrerequisiteMap);
+  rpc GetAllPostrequisites (Empty) returns (PostrequisiteMap);
+}
+
+message Empty {}
+
+message Subject {
+  string id = 1;
+  string name = 2;
+  string department = 3;
+  int32 credits = 4;
+  string semester = 5;
+  string internalId = 6;
+  string code = 7;
+}
+
+message SubjectsList {
+  repeated Subject subjects = 1;
+}
+
+message PrerequisiteMap {
+  map<string, Prerequisite> map = 1;
+}
+
+message Prerequisite {
+  string code = 1;
+  string prerequisiteCode = 2;
+}
+
+message PostrequisiteMap {
+  map<string, Postrequisite> map = 1;
+}
+
+message Postrequisite {
+  string code = 1;
+  string postrequisiteCode = 2;
+}

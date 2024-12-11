@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "CarrerasService";
+
+service Carreras {
+    rpc GetAll (Empty) returns (CarreraList);
+}
+
+message Empty {}
+
+message Carrera {
+    string name = 1;
+}
+
+message CarreraList {
+    repeated Carrera carreras = 1;
+}
