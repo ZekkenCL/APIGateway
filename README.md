@@ -59,8 +59,8 @@ La API Gateway es el punto central de entrada para las solicitudes hacia los mic
 - `POST /token/revoke-token`: Revoca un token JWT.
 
 ### **Carreras (CarrerasService)**
-- `GET /carrera/{id}`: Obtiene información de una carrera específica.
-- `POST /carrera`: Crea una nueva carrera.
+- `GET /carrera`: Obtiene información de una carrera específica.
+
 
 ### **Subjects (SubjectsService)**
 - `GET /subject`: Obtiene la lista de subjects.
