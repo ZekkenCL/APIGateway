@@ -6,7 +6,7 @@ La API Gateway es el punto central de entrada para las solicitudes hacia los mic
 
 ## Requisitos Previos
 
-1. **Instalar .NET 6 o superior**
+1. **Instalar .NET 8**
    - Asegúrate de tener el SDK de .NET instalado.
    - Verifica con:
      ```bash
