@@ -6,7 +6,7 @@ La API Gateway es el punto central de entrada para las solicitudes hacia los mic
 
 ## Requisitos Previos
 
-1. **Instalar .NET 6 o superior**
+1. **Instalar .NET 8**
    - Asegúrate de tener el SDK de .NET instalado.
    - Verifica con:
      ```bash
@@ -59,8 +59,8 @@ La API Gateway es el punto central de entrada para las solicitudes hacia los mic
 - `POST /token/revoke-token`: Revoca un token JWT.
 
 ### **Carreras (CarrerasService)**
-- `GET /carrera/{id}`: Obtiene información de una carrera específica.
-- `POST /carrera`: Crea una nueva carrera.
+- `GET /carrera`: Obtiene información de una carrera específica.
+
 
 ### **Subjects (SubjectsService)**
 - `GET /subject`: Obtiene la lista de subjects.
