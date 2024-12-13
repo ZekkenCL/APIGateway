@@ -34,6 +34,7 @@ var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<AuthorizationMiddleware>();
 
 // Endpoint para registrar usuarios
 app.Map("/auth/register", async (HttpContext context) =>
