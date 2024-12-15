@@ -278,5 +278,23 @@ app.Use(async (context, next) =>
     Console.WriteLine($"Response Status Code: {context.Response.StatusCode}");
 });
 
+// Endpoint Placeholder /my-progress
+app.MapGet("/my-progress", () =>
+{
+    return Results.Ok(new { message = "Listo" });
+});
+
+app.MapGet("/my-progress/add-subject", () =>
+{
+    return Results.Ok(new { message = "2 asignaturas agregadas" });
+});
+
+app.MapGet("/my-progress/remove-subject", () =>
+{
+    return Results.Ok(new { message = "1 asignatura eliminada" });
+});
+
+
+
 
 app.Run();
